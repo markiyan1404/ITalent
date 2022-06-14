@@ -6,14 +6,6 @@
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./main/scss/main.scss (1) ***!
   \****************************************************************************************************************************************************************************************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;300;400;500;600;700;800&display=swap);
-/*!********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./3d/scss/3d.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************/
-@import url(https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap);
-/*!************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./3d/scss/3d.scss (1) ***!
-  \************************************************************************************************************************************************************************************************************************************************/
-@import url(https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;300;400;500;600;700;800&display=swap);
 /*!**********************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./preloader/scss/preloader.scss ***!
   \**********************************************************************************************************************************************************************************************************************************************************/
@@ -453,7 +445,7 @@ html {
   align-items: center;
   animation: show 1s forwards;
   background-attachment: fixed;
-  background-image: url(../c852777bc18c1c2172e7.webp);
+  background-image: url("../../../dist/img/main/main.webp");
   background-position: 40% 0%;
   background-repeat: no-repeat;
   background-size: 80%;
@@ -1270,22 +1262,22 @@ html {
   transition: 0.3s;
 }
 .window-4 .window-4__architecture .image-architecture__background-1 {
-  background-image: url(../11d6186323a083598191.webp);
+  background-image: url("../../../dist/img/main/window-4(1).webp");
 }
 .window-4 .window-4__architecture .image-architecture__background-2 {
-  background-image: url(../85b82801426648713923.webp);
+  background-image: url("../../../dist/img/main/window-4(2).webp");
 }
 .window-4 .window-4__architecture .image-architecture__background-3 {
-  background-image: url(../441ae115a165616a9e33.webp);
+  background-image: url("../../../dist/img/main/window-4(3).webp");
 }
 .window-4 .window-4__architecture .image-architecture__background-4 {
-  background-image: url(../c627a44a56edaa7520c8.webp);
+  background-image: url("../../../dist/img/main/window-4(4).webp");
 }
 .window-4 .window-4__architecture .image-architecture__background-5 {
-  background-image: url(../c32557673153ca9360ea.webp);
+  background-image: url("../../../dist/img/main/window-4(5).webp");
 }
 .window-4 .window-4__architecture .image-architecture__background-6 {
-  background-image: url(../d998af1169bf795c9094.webp);
+  background-image: url("../../../dist/img/main/window-4(6).webp");
 }
 
 .window-5 {
@@ -4024,188 +4016,6 @@ canvas {
     font-size: 24px;
     padding: 3.5% 2%;
     right: 45%;
-  }
-}
-/*!************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./3d/scss/3d.scss (2) ***!
-  \************************************************************************************************************************************************************************************************************************************************/
-html {
-  --mainColor: #ffc700;
-  --contrastColorBlack: #080808;
-  --contrastColorWhite: #fff;
-  --transitionTime: 0;
-}
-
-@keyframes increase {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-@keyframes reduction {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-  }
-}
-@keyframes show {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes hide {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@keyframes leftToStatic {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-@keyframes rightToStatic {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-@keyframes topToStatic {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-@keyframes bottomToStatic {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-.body__close-container {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 4vh;
-  width: 96%;
-  z-index: 11;
-}
-.body__close-container .close-container__close {
-  color: var(--mainColor);
-  transition: var(--transitionTime);
-  align-items: center;
-  border: 2px solid var(--contrastColorWhite);
-  display: flex;
-  font-size: 19px;
-  height: 35px;
-  justify-content: center;
-  transform: rotate(45deg);
-  width: 35px;
-  z-index: 11;
-}
-.body__close-container .close-container__close:hover {
-  background: var(--mainColor);
-  color: var(--contrastColorWhite);
-  transition: var(--transitionTime);
-}
-
-.hide3D, .show3D {
-  animation-delay: 0.1s;
-  border: 0;
-  border: none;
-  opacity: 1;
-}
-
-.hide3D {
-  animation: hide3D 0.7s forwards;
-  transform: translateY(100%);
-}
-
-@keyframes hide3D {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0%);
-  }
-}
-.show3D {
-  animation: show3D 0.7s forwards;
-  transform: translateY(-100%);
-}
-
-@keyframes show3D {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0%);
-  }
-}
-/*!******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[0].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./3d/scss/adap/adap-3d.scss ***!
-  \******************************************************************************************************************************************************************************************************************************************************/
-@media screen and (min-width: 3200px) {
-  .body__close-container .close-container__close {
-    border: 4px solid var(--contrastColorWhite);
-    font-size: 32px;
-    height: 65px;
-    width: 65px;
-  }
-}
-@media screen and (min-width: 2000px) and (max-width: 3200px) {
-  .body__close-container .close-container__close {
-    border: 4px solid var(--contrastColorWhite);
-    font-size: 26px;
-    height: 47px;
-    width: 47px;
-  }
-}
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
-  .body__close-container .close-container__close {
-    border: 2px solid var(--contrastColorWhite);
-    font-size: 19px;
-    height: 32px;
-    width: 32px;
-  }
-}
-@media screen and (min-width: 700px) and (max-width: 1200px) {
-  .body__close-container .close-container__close {
-    border: 2px solid var(--contrastColorWhite);
-    font-size: 18px;
-    height: 35px;
-    width: 35px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .body__close-container .close-container__close {
-    font-size: 16px;
-    height: 32px;
-    width: 32px;
-  }
-}
-@media screen and (min-width: 0px) and (max-width: 1000px) {
-  .body__close-container {
-    width: 100%;
-    top: 10vh;
   }
 }
 /*!**************************************************************************************************************************************************************************************************************************************************************!*\
